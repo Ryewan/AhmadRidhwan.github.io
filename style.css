@@ -1,0 +1,19 @@
+
+      table, tr, td,th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding:10px;
+      }
+      th {
+        color: white;
+        background-color:green;
+        border: 1px solid white;
+      }
+      #country {
+        text-align:center;
+      }
+      td:nth-child[3] {
+	text-align:center;
+	}
+      
+ 
