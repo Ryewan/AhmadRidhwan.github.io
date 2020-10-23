@@ -39,7 +39,7 @@ function Getbooking() {
       }
       
       for (let j= 0; j < bookingIds.length; j++) {
-        var el = document.getElementById(bookingIds[j]);
+        let el = document.getElementById(bookingIds[j]);
         el.addEventListener("click", function() {
           let theId = bookingIds[j].replace("delete","");
           //DeleteBooking(theId);
