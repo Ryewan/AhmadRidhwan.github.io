@@ -13,7 +13,6 @@ function Getbooking() {
       var bookings = document.getElementById("booking-list");
       var bookingIds = [];
       //declare button
-      var buttonId = "delete" + gId;
 
       
       for (var i = 0; i < json.bookings.length; i++) {
