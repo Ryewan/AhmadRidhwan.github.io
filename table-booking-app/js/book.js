@@ -18,8 +18,8 @@ function BookNow(guestName,guestEmail,guestPax,guestRemarks) {
     .then((response) => response.json())
     .then(json => {
     // Do something with object
-        console.log(json.booking);
-        alert(json.booking.name + " sucessfully added!");
+        console.log(json.bookings);
+        alert(json.bookings.name + " sucessfully added!");
         
   });
 }
