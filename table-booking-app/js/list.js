@@ -58,11 +58,7 @@ function Getbooking() {
         method: 'DELETE',
       })
         .then((response) => {
-          let table = document.getElementById("booking-list");
-          for (let i = i; i < table.rows.length; i++){
-            table.deleteRow(i);
-          }
-            GetBooking();
+          location.reload();
         });
 
     } else {
