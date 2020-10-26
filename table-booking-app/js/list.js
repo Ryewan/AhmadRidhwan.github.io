@@ -40,7 +40,7 @@ function Getbooking() {
       for (let j= 0; j < bookingIds.length; j++) {
         let el = document.getElementById(bookingIds[j]);
         el.addEventListener("click", function() {
-          let theId = bookingIds[j].replace("delete","");
+          let theId = bookingIds[j].replace("delete", "");
           DeleteBooking(theId);
           
         })
@@ -62,7 +62,7 @@ function Getbooking() {
         });
 
     } else {
-        alert("Delete cancelled")
+        alert("Delete cancelled");
     }
 
   }
