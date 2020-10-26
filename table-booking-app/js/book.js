@@ -27,10 +27,10 @@ function BookNow(guestName,guestEmail,guestPax,guestRemarks) {
 window.addEventListener("load", function() {
 
     document.getElementById("bookNow").addEventListener("click", function(){
-        let name = document.getElementById("guestName");
-        let email = document.getElementById("guestEmail");
-        let pax = document.getElementById("guestPax");
-        let remarks = document.getElementById("guestRemarks");
+        let name = document.getElementById("guestName").value;
+        let email = document.getElementById("guestEmail").value;
+        let pax = document.getElementById("guestPax").value;
+        let remarks = document.getElementById("guestRemarks").value;
 
         BookNow(name, email, pax, remarks);
 
