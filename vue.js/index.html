@@ -14,7 +14,31 @@
         <span v-bind:title="message">
             Hover your mouse here few saat to see the title!
         </span>
+        
     </div>
+    <div id="app-3">
+        <span v-if="seen">You can see me</span>
+        <span v-else>seen value is false</span>
+        
+    </div>
+
+    <div id="app-4">
+        <ul>
+            <li v-for="item in todos">
+                {{item.text}}
+            </li>
+        </ul>
+    </div>
+
+    <div id="app-5">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+
+    <div id="app-6">
+        <p>{{ message }}</p>
+        <input v-model="message">
+      </div>
 
 
     <!--Vue app code must be added before body closing tag-->
