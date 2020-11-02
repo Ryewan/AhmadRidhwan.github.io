@@ -4,6 +4,10 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+body {
+    background-color: #52b788;
+}
+
 .jumbotron{
     background-image: url("img/ikan.jpg");
     background-repeat: no-repeat, repeat;

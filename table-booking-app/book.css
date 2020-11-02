@@ -4,6 +4,10 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+body {
+    background-color: #52b788;
+}
+
 .jumbotron {
     position: relative;
     overflow: hidden;
