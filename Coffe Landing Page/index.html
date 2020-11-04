@@ -8,6 +8,7 @@
 </head>
 <body>
     <section>
+        <div class="circle"></div>
         <header>
             <a href="#" class="logo">
                 <img src="img/logo.png">
@@ -21,7 +22,7 @@
         </header>
         <div class="content">
             <div class="textBox">
-                <h2>It just not a Coffee<br>It's<span>Starbuck</span></h2>
+                <h2>It just not a Coffee<br>It's<span> Starbuck</span></h2>
                 <p>We make sure everything we do honors that connection – from our commitment to the highest quality coffee in the world, to the way we engage with our customers and communities to do business responsibly.</p>
                 <a href="#">Learn More</a>
             </div>
@@ -29,7 +30,29 @@
                 <img src="img/img1.png" class="starbucks">
             </div>
         </div>
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" onclick="imgSlider('img/img1.png'); changeCircleColor('#017143')"></li>
+            <li><img src="img/thumb2.png" onclick="imgSlider('img/img2.png'); changeCircleColor('#eb7495')"></li>
+            <li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png'); changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+        </ul>
     </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+        
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+
+        }
+    </script>
     
 </body>
 </html>
