@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html, body {
+    height: 100%;
+
+}
+
+body {
+    font-family: poppins;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-weight: 600;
+}
+p {
+    letter-spacing: 0;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding: 80px 0; 
+}
+
+.section-header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.section-header h2:before {
+    content: '{';
+    padding-right: 15px;
+}
+
+.section-header h2:after {
+    content: '}';
+    padding-left: 15px;
+}
+
+/*navbar*/
+.nav-area {
+    height: 65px;
+}
+
+.main-menu {
+    transition: all 0.4s ease-out;
+    margin-top: 10px;
+}
+
+.navbar {
+    border: 0;
+    margin-bottom: 0;
+}
+
+.nav-area .sticky_navigation {
+    background: #fff;
+    height: 55px;
+}
+
+.sticky_navigation {
+    transition: all 0.4s ease-out;
+    box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.3);
+}
+
+.sticky_navigation .main-menu {
+    margin-top: 0;
+
+}
+
+.sticky_navigation .navbar-brand {
+    color: #ee5a4e;
+}
+
+.sticky_navigation .navbar-brand:hover,
+.sticky_navigation .navbar-brand:focus {
+    color: #ee5a4e;
+}
+
+.sticky_navigation .nav li a {
+    color: #333;
+}
+
+.sticky_navigation .nav li .active a {
+    color: #262626;
+}
+
+.sticky_navigation .navbar-brand:hover {
+    color: #333;
+}
+
+.navbar-brand {
+    padding: 15px 0;
+    font-size: 25px;
+    display: block;
+    color: #262626;
+    font-weight: 800;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+    text-decoration: none;
+    color: #262626;
+}
+
+.navbar-right li {
+    display: inline-block;
+    float: none;
+}
+
+.navbar-right li a {
+    color: #262626;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar-right li .active a {
+    font-weight: bold;
+    color: #262626;
+}
+
+nav>li>a:hover,
+nav>li>a:active,
+nav>li>a:focus {
+    background: none;
+}
+
+/*banner*/
+
+.banner-area {
+    background-image: url(img/satu.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 100%;
+}
+
+.banner-table {
+    display: table;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.welcome-text h2 {
+    font-size: 3.8em;
+    font-weight: 900;
+    color: #262626;
+    text-transform: uppercase;
+}
+
+.welcome-text h4 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.banner-btn a {
+    background: #ee5a4e;
+    color: #fff;
+    padding: 10px 35px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 991px) {
+    .welcome-text {
+        text-align: center;
+        margin: 25px auto;
+    }
+}
+
+/*about*/
+
+.about-text a {
+    background: #ee5a4e;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+/*service*/
+
+.single-service {
+    text-align: center;
+}
+
+.icon-area i {
+    font-size: 40px;
+    color: #ee5a4e;
+}
+
+/*portfolio*/
+
+#portfolio img {
+    margin-bottom:30px;
+}
+
+/*contact*/
+
+.single-contact input {
+    margin-bottom: 30px;
+}
+
+.single-contact button {
+    margin-top: 30px;
+}
+
+/*footer*/
+
+.footer {
+    background: #262626;
+    padding: 30px 0;
+    color: #fff;
+}
+
+/*responsive*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-padding {
+        padding: 35px 0;
+    }
+    .navbar-nav {
+        padding: 15px 0;
+    }
+
+    .navbar-brand {
+        padding: 20px 0;
+    }
+    .navbar-nav > li > a {
+        line-height: 0;
+    }
+
+    .nav > li > a {
+        padding: 10px 8px;
+    }
+
+    #about {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-padding {
+        padding: 30px 0;
+    }
+    .navbar-toggle .icon-bar {
+        background: #ee5a4e;
+    }
+    .navbar-nav {
+        float: right;
+        margin: 11px 21px;
+        margin-right: 32%;
+        display: inherit;
+        width: 200px;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    .navbar-nav li {
+        float: left;
+        margin: 9px 50px;
+        display: inherit;
+        width: 100%;
+    }
+
+    .navbar-right li a {
+        color: #fff;
+    }
+
+    .navbar-fixed-top .navbar-collapse {
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar-right li .active a {
+        color: #fff;
+    }
+
+    .sticky_navigation .nav li a {
+        color: #fff;
+    }
+
+    .sticky_navigation .nav li .active a {
+        color: #fff;
+    }
+
+    .welcome-text h4 {
+        font-size: 23px;
+    }
+
+    .welcome-text h2 {
+        font-size: 2em;
+    }
+
+    #about {
+        text-align: center;
+    }
+ 
+ 
+ 
+}
