@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocacola Landing Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="img/logo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Taste Like Garbage</h2>
+                <p>Research has confirmed many risks of regularly consuming Coca-Cola and other sugary drinks. These beverages increase blood sugar levels rapidly and affect the pleasure centers of the brain in a similar way as heroin. More recent research adds to the evidence of a link between sugary drinks and diabetes and seems to confirm the adverse effects of these drinks on brain, kidney, and liver activity. However, consuming Coca-Cola and sugar-sweetened beverages in moderation is unlikely to have a severe effect on health.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="imgBox">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="img/cocacola1.png"></div>
+                      <div class="swiper-slide"><img src="img/cocacola2.png"></div>
+                      <div class="swiper-slide"><img src="img/cocacola3.png"></div>
+                      <div class="swiper-slide"><img src="img/cocacola4.png"></div>
+                      <div class="swiper-slide"><img src="img/cocacola5.png"></div>
+                      <div class="swiper-slide"><img src="img/cocacola6.png"></div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          loop: true,
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.toggle');
+            const navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+</html>
